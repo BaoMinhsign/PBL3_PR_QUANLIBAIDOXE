@@ -1,0 +1,9 @@
+C:\Users\TRAN BAO MINH\source\repos\PBL3_PR_QUANLIBAIDOXE\DTO\bin\Debug\DTO.dll
+C:\Users\TRAN BAO MINH\source\repos\PBL3_PR_QUANLIBAIDOXE\DTO\bin\Debug\DTO.pdb
+C:\Users\TRAN BAO MINH\source\repos\PBL3_PR_QUANLIBAIDOXE\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+C:\Users\TRAN BAO MINH\source\repos\PBL3_PR_QUANLIBAIDOXE\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+C:\Users\TRAN BAO MINH\source\repos\PBL3_PR_QUANLIBAIDOXE\DTO\obj\Debug\DTO.dll
+C:\Users\TRAN BAO MINH\source\repos\PBL3_PR_QUANLIBAIDOXE\DTO\obj\Debug\DTO.pdb
+C:\Users\TRAN BAO MINH\source\repos\PBL3_PR_QUANLIBAIDOXE\DTO\bin\Debug\System.Data.SqlClient.dll
+C:\Users\TRAN BAO MINH\source\repos\PBL3_PR_QUANLIBAIDOXE\DTO\bin\Debug\System.Data.SqlClient.xml
+C:\Users\TRAN BAO MINH\source\repos\PBL3_PR_QUANLIBAIDOXE\DTO\obj\Debug\DTO.csproj.Up2Date
