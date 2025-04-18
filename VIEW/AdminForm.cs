@@ -15,6 +15,7 @@ namespace VIEW
         public AdminForm()
         {
             InitializeComponent();
+            this.WindowState = FormWindowState.Maximized;
         }
         private void LoadUC(UserControl uc)
         {
@@ -27,5 +28,6 @@ namespace VIEW
         {
             LoadUC(new ucKhachHang());
         }
+        
     }
 }

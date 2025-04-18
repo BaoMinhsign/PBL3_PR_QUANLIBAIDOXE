@@ -23,6 +23,21 @@ namespace BLL
                 error = "Không được để trống thông tin khách hàng!";
                 return false;
             }
+            else if (kh.Name_customer.Length > 50)
+            {
+                error = "Tên khách hàng không được quá 50 ký tự!";
+                return false;
+            }
+            else if (dal.CheckID(kh.ID_Khach))
+            {
+                error = "ID khách hàng đã tồn tại!";
+                return false;
+            }
+            else if (dal.CheckPhone(kh.Phone_customer))
+            {
+                error = "Số điện thoại đã tồn tại!";
+                return false;
+            }
             return dal.AddKhachHang(kh);
         }
         public bool UpdateKhachHang(KhachHang kh, out string error)

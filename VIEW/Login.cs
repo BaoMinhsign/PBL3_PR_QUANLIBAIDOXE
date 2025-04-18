@@ -42,6 +42,7 @@ namespace VIEW
             {
                 AdminForm adminForm = new AdminForm();
                 adminForm.ShowDialog();
+                this.Close();
             }
             //else if (result.ID_role == 2)
             //{

@@ -105,6 +105,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="ucKhachHang.resx">
       <DependentUpon>ucKhachHang.cs</DependentUpon>
@@ -156,6 +157,18 @@
       <Project>{c9244faa-0df4-4c0e-8403-5eb41f51a6ba}</Project>
       <Name>DTO</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search_btn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit_btn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Del_btn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add_KhachHangbtn.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

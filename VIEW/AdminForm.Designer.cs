@@ -1,4 +1,6 @@
-﻿namespace VIEW
+﻿using System.Drawing;
+
+namespace VIEW
 {
     partial class AdminForm
     {
@@ -41,6 +43,7 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = Color.FromArgb(21, 14, 55);
             this.panel1.Controls.Add(this.btnThongke);
             this.panel1.Controls.Add(this.btnGiaodich);
             this.panel1.Controls.Add(this.btnBaido);
@@ -49,50 +52,59 @@
             this.panel1.Controls.Add(this.btnNhanvien);
             this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(131, 371);
+            this.panel1.Size = new System.Drawing.Size(158, 530);
             this.panel1.TabIndex = 0;
             // 
             // btnThongke
             // 
-            this.btnThongke.Location = new System.Drawing.Point(12, 228);
+            this.btnThongke.Location = new System.Drawing.Point(8, 332);
+            this.btnThongke.Margin = new System.Windows.Forms.Padding(35);
             this.btnThongke.Name = "btnThongke";
-            this.btnThongke.Size = new System.Drawing.Size(100, 37);
+            this.btnThongke.Padding = new System.Windows.Forms.Padding(5);
+            this.btnThongke.Size = new System.Drawing.Size(145, 44);
             this.btnThongke.TabIndex = 5;
             this.btnThongke.Text = "Thống Kê";
             this.btnThongke.UseVisualStyleBackColor = true;
             // 
             // btnGiaodich
             // 
-            this.btnGiaodich.Location = new System.Drawing.Point(12, 185);
+            this.btnGiaodich.Location = new System.Drawing.Point(8, 272);
+            this.btnGiaodich.Margin = new System.Windows.Forms.Padding(35);
             this.btnGiaodich.Name = "btnGiaodich";
-            this.btnGiaodich.Size = new System.Drawing.Size(100, 37);
+            this.btnGiaodich.Padding = new System.Windows.Forms.Padding(5);
+            this.btnGiaodich.Size = new System.Drawing.Size(145, 44);
             this.btnGiaodich.TabIndex = 4;
             this.btnGiaodich.Text = "Giao Dịch";
             this.btnGiaodich.UseVisualStyleBackColor = true;
             // 
             // btnBaido
             // 
-            this.btnBaido.Location = new System.Drawing.Point(12, 142);
+            this.btnBaido.Location = new System.Drawing.Point(9, 212);
+            this.btnBaido.Margin = new System.Windows.Forms.Padding(0);
             this.btnBaido.Name = "btnBaido";
-            this.btnBaido.Size = new System.Drawing.Size(100, 37);
+            this.btnBaido.Size = new System.Drawing.Size(145, 44);
             this.btnBaido.TabIndex = 3;
             this.btnBaido.Text = "Bãi Đỗ";
             this.btnBaido.UseVisualStyleBackColor = true;
             // 
             // btnPhuongtien
             // 
-            this.btnPhuongtien.Location = new System.Drawing.Point(12, 99);
+            this.btnPhuongtien.Location = new System.Drawing.Point(9, 152);
+            this.btnPhuongtien.Margin = new System.Windows.Forms.Padding(35);
             this.btnPhuongtien.Name = "btnPhuongtien";
-            this.btnPhuongtien.Size = new System.Drawing.Size(100, 37);
+            this.btnPhuongtien.Padding = new System.Windows.Forms.Padding(5);
+            this.btnPhuongtien.Size = new System.Drawing.Size(145, 44);
             this.btnPhuongtien.TabIndex = 2;
             this.btnPhuongtien.Text = "Phương Tiện";
             this.btnPhuongtien.UseVisualStyleBackColor = true;
             // 
             // btnKhachhang
             // 
-            this.btnKhachhang.Location = new System.Drawing.Point(12, 56);
+            this.btnKhachhang.Location = new System.Drawing.Point(8, 92);
+            this.btnKhachhang.Margin = new System.Windows.Forms.Padding(35);
             this.btnKhachhang.Name = "btnKhachhang";
-            this.btnKhachhang.Size = new System.Drawing.Size(100, 37);
+            this.btnKhachhang.Padding = new System.Windows.Forms.Padding(5);
+            this.btnKhachhang.Size = new System.Drawing.Size(145, 44);
             this.btnKhachhang.TabIndex = 1;
             this.btnKhachhang.Text = "Khách Hàng";
             this.btnKhachhang.UseVisualStyleBackColor = true;
@@ -100,9 +112,11 @@
             // 
             // btnNhanvien
             // 
-            this.btnNhanvien.Location = new System.Drawing.Point(12, 13);
+            this.btnNhanvien.Location = new System.Drawing.Point(8, 32);
+            this.btnNhanvien.Margin = new System.Windows.Forms.Padding(35);
             this.btnNhanvien.Name = "btnNhanvien";
-            this.btnNhanvien.Size = new System.Drawing.Size(100, 37);
+            this.btnNhanvien.Padding = new System.Windows.Forms.Padding(5);
+            this.btnNhanvien.Size = new System.Drawing.Size(145, 44);
             this.btnNhanvien.TabIndex = 0;
             this.btnNhanvien.Text = "Nhân Viên";
             this.btnNhanvien.UseVisualStyleBackColor = true;
@@ -111,14 +125,14 @@
             // 
             this.panelMain.Location = new System.Drawing.Point(176, 12);
             this.panelMain.Name = "panelMain";
-            this.panelMain.Size = new System.Drawing.Size(800, 500);
+            this.panelMain.Size = new System.Drawing.Size(1155, 530);
             this.panelMain.TabIndex = 1;
             // 
             // AdminForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1013, 540);
+            this.ClientSize = new System.Drawing.Size(1370, 749);
             this.Controls.Add(this.panelMain);
             this.Controls.Add(this.panel1);
             this.Name = "AdminForm";

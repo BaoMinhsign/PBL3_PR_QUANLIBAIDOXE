@@ -29,6 +29,7 @@ namespace VIEW
         private void button1_Click(object sender, EventArgs e)
         {
           KhachHang kh = new KhachHang();
+            kh.ID_Khach = txtID.Text;
             kh.Name_customer = txtName.Text;
             kh.Phone_customer = txtNum.Text;
             KhachHangBLL bll = new KhachHangBLL();
@@ -42,7 +43,7 @@ namespace VIEW
             }
             else
             {
-                MessageBox.Show("Cập nhật khách hàng thất bại!");
+                MessageBox.Show(error);
             }
         }
 

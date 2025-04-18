@@ -31,12 +31,12 @@ namespace VIEW
             bool result = bll.AddKhachHang(kh, out error);
             if (result)
             {
-                MessageBox.Show("Thêm khách hàng thành công!");
+                MessageBox.Show("Thêm khách hàng thành công !!");
                 this.Close();
             }
             else
             {
-                MessageBox.Show("Thêm khách hàng thất bại!");
+                MessageBox.Show(error);
             }
 
         }

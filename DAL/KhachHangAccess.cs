@@ -82,5 +82,33 @@ namespace DAL
             }
             return li;
         }
+        public bool CheckID(string id)
+        {
+            string query = "SELECT COUNT(*) FROM KHACHHANG WHERE ID_Khach = @ID_Khach";
+            SqlParameter[] parameters = new SqlParameter[]
+            {
+                new SqlParameter("@ID_Khach", id)
+            };
+            int count = Convert.ToInt32(ExecuteScalar(query, parameters));
+            if (count > 0)
+            {
+                return true;
+            }
+            return false;
+        }
+        public bool CheckPhone(string phone)
+        {
+            string query = "SELECT COUNT(*) FROM KHACHHANG WHERE Phone_Customer = @Phone_Customer";
+            SqlParameter[] parameters = new SqlParameter[]
+            {
+                new SqlParameter("@Phone_Customer", phone)
+            };
+            int count = Convert.ToInt32(ExecuteScalar(query, parameters));
+            if (count > 0)
+            {
+                return true;
+            }
+            return false;
+        }
     }
 }
