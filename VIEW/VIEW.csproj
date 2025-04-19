@@ -170,5 +170,41 @@
   <ItemGroup>
     <None Include="Resources\Add_KhachHangbtn.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_Nhanvien.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_Thongke.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_Giaodich.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_Baido.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_Phuongtien.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_Khachhang.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_Thongke.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_Giaodich.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_Baido.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_Phuongtien.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_Khachhang.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_Nhanvien.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

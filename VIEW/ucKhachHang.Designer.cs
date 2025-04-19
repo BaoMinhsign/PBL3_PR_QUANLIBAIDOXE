@@ -38,11 +38,6 @@ namespace VIEW
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.btnSearch = new System.Windows.Forms.Button();
             this.dgvKhachHang = new System.Windows.Forms.DataGridView();
-            this.ID_Khach = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Name_Customer = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Phone_Customer = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.clbtnEdit = new System.Windows.Forms.DataGridViewImageColumn();
-            this.clbtnDel = new System.Windows.Forms.DataGridViewImageColumn();
             this.kHACHHANGBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.quanLiBaiDoXeDataSet1 = new VIEW.QuanLiBaiDoXeDataSet1();
             this.kHACHHANGBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -50,6 +45,11 @@ namespace VIEW
             this.kHACHHANGTableAdapter = new VIEW.QuanLiBaiDoXeDataSetTableAdapters.KHACHHANGTableAdapter();
             this.kHACHHANGTableAdapter1 = new VIEW.QuanLiBaiDoXeDataSet1TableAdapters.KHACHHANGTableAdapter();
             this.btnAdd = new System.Windows.Forms.Button();
+            this.ID_Khach = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Name_Customer = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Phone_Customer = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clbtnEdit = new System.Windows.Forms.DataGridViewImageColumn();
+            this.clbtnDel = new System.Windows.Forms.DataGridViewImageColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvKhachHang)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kHACHHANGBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.quanLiBaiDoXeDataSet1)).BeginInit();
@@ -73,7 +73,7 @@ namespace VIEW
             this.txtSearch.ForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.txtSearch.Location = new System.Drawing.Point(24, 69);
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(1038, 29);
+            this.txtSearch.Size = new System.Drawing.Size(911, 29);
             this.txtSearch.TabIndex = 1;
             this.txtSearch.Text = "Nhập ID hoặc tên khách hàng để tìm kiếm";
             this.txtSearch.Click += new System.EventHandler(this.txtSearch_Click);
@@ -84,7 +84,7 @@ namespace VIEW
             this.btnSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnSearch.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSearch.Location = new System.Drawing.Point(1068, 68);
+            this.btnSearch.Location = new System.Drawing.Point(947, 69);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(42, 31);
             this.btnSearch.TabIndex = 2;
@@ -128,57 +128,9 @@ namespace VIEW
             this.dgvKhachHang.Location = new System.Drawing.Point(24, 135);
             this.dgvKhachHang.Name = "dgvKhachHang";
             this.dgvKhachHang.ReadOnly = true;
-            this.dgvKhachHang.Size = new System.Drawing.Size(1042, 334);
+            this.dgvKhachHang.Size = new System.Drawing.Size(965, 334);
             this.dgvKhachHang.TabIndex = 3;
             this.dgvKhachHang.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvKhachHang_CellContentClick);
-            // 
-            // ID_Khach
-            // 
-            this.ID_Khach.DataPropertyName = "ID_Khach";
-            this.ID_Khach.FillWeight = 25.97403F;
-            this.ID_Khach.HeaderText = "ID";
-            this.ID_Khach.Name = "ID_Khach";
-            this.ID_Khach.ReadOnly = true;
-            this.ID_Khach.Width = 300;
-            // 
-            // Name_Customer
-            // 
-            this.Name_Customer.DataPropertyName = "Name_Customer";
-            this.Name_Customer.FillWeight = 155.2408F;
-            this.Name_Customer.HeaderText = "Tên Khách Hàng";
-            this.Name_Customer.Name = "Name_Customer";
-            this.Name_Customer.ReadOnly = true;
-            this.Name_Customer.Width = 300;
-            // 
-            // Phone_Customer
-            // 
-            this.Phone_Customer.DataPropertyName = "Phone_Customer";
-            this.Phone_Customer.FillWeight = 199.2299F;
-            this.Phone_Customer.HeaderText = "Số Điện Thoại";
-            this.Phone_Customer.Name = "Phone_Customer";
-            this.Phone_Customer.ReadOnly = true;
-            this.Phone_Customer.Width = 300;
-            // 
-            // clbtnEdit
-            // 
-            this.clbtnEdit.FillWeight = 52.18367F;
-            this.clbtnEdit.HeaderText = "";
-            this.clbtnEdit.Image = global::VIEW.Properties.Resources.Edit_btn;
-            this.clbtnEdit.Name = "clbtnEdit";
-            this.clbtnEdit.ReadOnly = true;
-            this.clbtnEdit.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.clbtnEdit.Width = 50;
-            // 
-            // clbtnDel
-            // 
-            this.clbtnDel.FillWeight = 67.37158F;
-            this.clbtnDel.HeaderText = "";
-            this.clbtnDel.Image = global::VIEW.Properties.Resources.Del_btn;
-            this.clbtnDel.Name = "clbtnDel";
-            this.clbtnDel.ReadOnly = true;
-            this.clbtnDel.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.clbtnDel.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.clbtnDel.Width = 50;
             // 
             // kHACHHANGBindingSource1
             // 
@@ -215,12 +167,60 @@ namespace VIEW
             this.btnAdd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnAdd.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAdd.Location = new System.Drawing.Point(980, 20);
+            this.btnAdd.Location = new System.Drawing.Point(859, 20);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(130, 38);
             this.btnAdd.TabIndex = 4;
             this.btnAdd.UseVisualStyleBackColor = false;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            // 
+            // ID_Khach
+            // 
+            this.ID_Khach.DataPropertyName = "ID_Khach";
+            this.ID_Khach.FillWeight = 25.97403F;
+            this.ID_Khach.HeaderText = "ID";
+            this.ID_Khach.Name = "ID_Khach";
+            this.ID_Khach.ReadOnly = true;
+            this.ID_Khach.Width = 275;
+            // 
+            // Name_Customer
+            // 
+            this.Name_Customer.DataPropertyName = "Name_Customer";
+            this.Name_Customer.FillWeight = 155.2408F;
+            this.Name_Customer.HeaderText = "Tên Khách Hàng";
+            this.Name_Customer.Name = "Name_Customer";
+            this.Name_Customer.ReadOnly = true;
+            this.Name_Customer.Width = 275;
+            // 
+            // Phone_Customer
+            // 
+            this.Phone_Customer.DataPropertyName = "Phone_Customer";
+            this.Phone_Customer.FillWeight = 199.2299F;
+            this.Phone_Customer.HeaderText = "Số Điện Thoại";
+            this.Phone_Customer.Name = "Phone_Customer";
+            this.Phone_Customer.ReadOnly = true;
+            this.Phone_Customer.Width = 275;
+            // 
+            // clbtnEdit
+            // 
+            this.clbtnEdit.FillWeight = 52.18367F;
+            this.clbtnEdit.HeaderText = "";
+            this.clbtnEdit.Image = global::VIEW.Properties.Resources.Edit_btn;
+            this.clbtnEdit.Name = "clbtnEdit";
+            this.clbtnEdit.ReadOnly = true;
+            this.clbtnEdit.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.clbtnEdit.Width = 50;
+            // 
+            // clbtnDel
+            // 
+            this.clbtnDel.FillWeight = 67.37158F;
+            this.clbtnDel.HeaderText = "";
+            this.clbtnDel.Image = global::VIEW.Properties.Resources.Del_btn;
+            this.clbtnDel.Name = "clbtnDel";
+            this.clbtnDel.ReadOnly = true;
+            this.clbtnDel.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.clbtnDel.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.clbtnDel.Width = 50;
             // 
             // ucKhachHang
             // 
@@ -233,7 +233,7 @@ namespace VIEW
             this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.label1);
             this.Name = "ucKhachHang";
-            this.Size = new System.Drawing.Size(1134, 800);
+            this.Size = new System.Drawing.Size(1028, 800);
             ((System.ComponentModel.ISupportInitialize)(this.dgvKhachHang)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kHACHHANGBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.quanLiBaiDoXeDataSet1)).EndInit();
